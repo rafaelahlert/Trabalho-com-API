@@ -1,0 +1,69 @@
+/*o root define que a variavel esta disponivel em todo o projeto*/
+
+:root { 
+    --cor-principal: rgb(0, 91, 175);
+    --cinza-escuro: rgb(51, 51, 51);
+    --cinza-claro: rgb(230, 230, 230);
+}
+
+@font-face{
+    font-family:'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.ttf');
+    font-weight: bold;
+}
+
+body{
+    margin: 0;
+    font-family: Roboto;
+    color: var(--cinza-escuro);
+}
+
+h1{
+    color: blue;
+}
+
+h2{
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-principal);
+}
+
+header, section, footer {
+    min-height: 33.4vh; /*vh (unid. medida) == altura da area visivel*/
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewerCanvas{
+    border: 2px;
+    background-color: solid black;
+}
+
+header{
+    /*background-color: var(--cor-principal);*/
+    background: #FAFAFA;
+   }
+
+header img{
+    height: 100px;
+}
+
+footer {
+    background-color: var(--cinza-escuro);
+    color: white;
+    overflow: hidden;
+}
+
+
